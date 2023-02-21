@@ -34,3 +34,10 @@
   padding: 1rem 3rem;
 
 }
+
+.container {
+  display: block;
+  float: auto;
+  margin: 20px
+
+}
