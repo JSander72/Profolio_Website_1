@@ -7,14 +7,30 @@
 @supports(display: flex) {
   @media screen and (min-width: 900px) {
     article {
-      display: flex;
+      display: block;
     }
   }
 }
 
 .form-handling {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  
+  font: auto;
+  display: block;
+  position: relative;
+  float: auto;
+  margin: auto;
+  padding: 1rem 3rem;
+  background-color: whitesmoke;
+  border-color: blanchedalmond;
 
+
+}
+
+.feildset {
+  font: auto;
+  display: block;
+  position: relative;
+  float: auto;
+  margin: auto;
+  padding: 1rem 3rem;
 
 }
