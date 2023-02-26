@@ -1,8 +1,52 @@
 .navbar {
-  position: right;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
+  position: static;
+  /* display: inline-block; */
+  float: right;
+  top: 0;
+  right: 0;
+  width: auto;
+  background-color: #33333334;
+  color: #fff;
+
 }
 
+.navbar-toggle {
+  display: block;
+  float: right;
+  padding: 10px;
+  cursor: pointer;
+
+}
+
+.line {
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin-bottom: 5px;
+  background-color: #fff;
+}
+
+.navbar-menu {
+  display: none;
+  position: static;
+  top: 50px;
+  right: 0;
+  padding: 10px;
+  background-color: black;
+}
+
+.navbar-menu li {
+  margin-bottom: 10px;
+  color: #ffffff00;
+}
+
+.navbar-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-toggle:hover + .navbar-menu,
+.navbar-menu:hover {
+  display: block;
+
+}
