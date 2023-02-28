@@ -1,3 +1,16 @@
+/* @media (max-width: 700px) {
+  .bma {
+    position: fixed;
+    margin: auto;
+    display: block;
+    width: auto;
+    height: auto;
+    text-align: center;
+
+  }
+
+} */
+
 html {
   display: block;
   scroll-behavior: auto;
@@ -30,7 +43,7 @@ body {
   position: relative;
   text-align: left;
   padding: 15px;
-  
+
 }
 
 .BMAlink {
