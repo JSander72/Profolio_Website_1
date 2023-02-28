@@ -1,15 +1,17 @@
 html {
   display: block;
   scroll-behavior: auto;
-
-
 }
 
-.self, .goals, .contact {
+
+.self,
+.goals,
+.contact {
   background-color: rgba(93, 93, 84, 0.094);
   margin-top: auto;
 
 }
+
 body {
   margin-inline: 25px;
 }
@@ -20,19 +22,26 @@ body {
   display: block;
 
 }
+
 .images {
   display: inline-block;
   width: 150px;
   height: 150px;
   position: relative;
   text-align: left;
-  padding: 15px
-
-
+  padding: 15px;
+  
 }
 
 .BMAlink {
   position: relative;
   display: block;
 
+}
+
+.logo-big {
+  text-align: center;
+  display: block;
+  position: relative;
+  float: right;
 }
