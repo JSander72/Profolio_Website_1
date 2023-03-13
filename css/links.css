@@ -1,5 +1,5 @@
 .navbar {
-  position: static;
+  position: absolute;
   /* display: inline-block; */
   float: right;
   top: 0;
@@ -33,6 +33,7 @@
   right: 0;
   padding: 10px;
   background-color: black;
+
 }
 
 .navbar-menu li {
