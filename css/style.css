@@ -1,10 +1,6 @@
-@media (max-width: 700px) {
+@media (max-width: 700px) {}
 
-}
-
-@media (min-width:450px) {
-
-}
+@media (min-width:450px) {}
 
 
 /* html {
@@ -57,29 +53,77 @@
 }
 
 .social {
-  padding:15px;
-  margin: 5px;
-  border-radius: 6px;
-  position: relative;
-  overflow: hidden;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 15px;
+  position: flex;
+  flex-direction: column;
+  /* overflow: hidden; */
 }
 
-.social a{
-  font-size: 30px;
-  color: #22096d;
-  border-style: groove;
-  border-color: grey;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 6px;
-  display: flex;
-}
-
-.social a:hover {
-  background-color: darkred;
+.rowsocial a {
+  font-size: 3em;
+  display: inline-block;
   color: white;
-  -webkit-transition: background-color 0.6s ease-out, color 0.6s ease-out;
-  -moz-transition: background-color 0.6s ease-out, color 0.6s ease-out;
-  -o-transition: background-color 0.6s ease-out, color 0.6s ease-out;
-  transition: background-color 0.6s ease-out, color 0.6s ease-out;
+  border-style: hidden;
+  border-color: black;
+  border-radius: 10px;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  background-color: black;
+}
+
+.fa-youtube:hover {
+  animation: shake-animation 4.72s ease infinite;
+  transform-origin: 50% 50%;
+}
+
+.fa-twitter:hover {
+  animation: shake-animation 4.72s ease infinite;
+  transform-origin: 50% 50%;
+}
+
+.fa-facebook:hover {
+  animation: shake-animation 4.72s ease infinite;
+  transform-origin: 50% 50%;
+}
+
+.fa-instagram:hover {
+  animation: shake-animation 4.72s ease infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes shake-animation {
+  0% {
+    transform: translate(0, 0)
+  }
+
+  1.78571% {
+    transform: translate(5px, 0)
+  }
+
+  3.57143% {
+    transform: translate(0, 0)
+  }
+
+  5.35714% {
+    transform: translate(5px, 0)
+  }
+
+  7.14286% {
+    transform: translate(0, 0)
+  }
+
+  8.92857% {
+    transform: translate(5px, 0)
+  }
+
+  10.71429% {
+    transform: translate(0, 0)
+  }
+
+  100% {
+    transform: translate(0, 0)
+  }
 }
