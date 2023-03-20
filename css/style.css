@@ -7,12 +7,15 @@ body {
 
 /* added background image to bring more life to the page 3.19.23 */
 .clearfix {
+  position: relative;
+  z-index: -10;
   background-image: url(https://i.ibb.co/ncX7smH/simple-home-setup.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-
+  text-shadow: 1px 1px 2px rgb(248, 247, 247), 0 0 1em rgb(247, 247, 248), 0 0 0.2em rgb(247, 247, 248);
+  filter: brightness(75%);
 }
 
 .work, .about {
@@ -92,7 +95,7 @@ body {
 
 .rowsocial a {
   justify-content: space-evenly;
-  font-size: 5em;
+  font-size: 1em;
   display: inline-block;
   color: white;
   border-style: hidden;
