@@ -1,11 +1,30 @@
 @media (max-width: 700px) {}
 
 @media (min-width:450px) {}
+body {
+  font-size: large;
+}
 
+/* added background image to bring more life to the page 3.19.23 */
+.clearfix {
+  background-image: url(https://i.ibb.co/ncX7smH/simple-home-setup.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 
-/* html {
+}
 
-} */
+.work, .about {
+  background-image: url(https://i.ibb.co/ncX7smH/simple-home-setup.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  text-shadow: 1px 1px 2px rgb(248, 247, 247), 0 0 1em rgb(247, 247, 248), 0 0 0.2em rgb(247, 247, 248);
+  filter: brightness(75%);
+}
+
 .logo-big {
   align-content: center;
   display: inline-block;
@@ -20,17 +39,9 @@
 
 }
 
-/* body {
-  position: relative;
-  display: inline-block;
-  scroll-behavior: auto;
-  margin-inline: 25px;
-} */
-
 .bmaImgContainer {
   display: flex;
-  position: justify;
-  justify-content: center;
+  justify-content: space-evenly;
   margin-right: auto;
   margin-left: auto;
 
@@ -48,16 +59,15 @@
 
 .BMAlink {
   position: relative;
-  display: block;
-  align-items: center;
   display: flex;
   justify-content: space-evenly;
+  font-size: x-large;
 
 }
 .BMAlink:hover {
   animation: shake-animation 4.72s ease infinite;
   transform-origin: 50% 50%;
-  font-size: larger;
+  font-size: xx-large;
   font-weight: bolder;
 }
 
@@ -69,7 +79,6 @@
   padding: 5px;
   text-align: justify;
   justify-content: space-evenly;
-  /* margin: 5px; */
   border-radius: 50%;
 }
 
