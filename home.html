@@ -11,6 +11,9 @@
   <link rel="stylesheet" href="css/links.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
     integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
   <title>Full Stack | Junior Software Developer</title>
 
 </head>
@@ -21,48 +24,65 @@
   has a lot of drive to learn please hire me.
   Contact Info: jamesearlsanders2@outlook.com (205)569-7293 -->
 
-<body>
+<body class="spot p-sm-4">
   <!-- Navbar -->
-  <nav class="navbar">
-    <div class="navbar-toggle">
-      <span class="line"></span>
-      <span class="line"></span>
-      <span class="line"></span>
-    </div>
-    <!-- figure out how to set the menu so that the words in the self section dont move back and forth as the menu is selected 3.2.23 -->
-    <ul class="navbar-menu">
-      <li><a href="#self">Self</a></li>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#goals">Goals</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-  <div class="spot"></div>
-  <!-- keep woring on alignement of both logos withthe page -->
+  <nav class="navbar bg-light-subtle fixed-top">
+    <div class="container-fluid p-sm-4">
 
+      <a class="navbar-brand " href="#">Future Fullstack JavaScript Developer</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#Self to Structured">Self to Structured</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#Put in the Work">Put in the Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#The Goal Is To...">The Goal Is To...</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#A little About Me">A little About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Personal Business & Contact">Personal Business & Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- figure out how to set the menu so that the words in the self section dont move back and forth as the menu is selected 3.2.23 completed 3.21.23-->
+
+  <div class="spot py-4"></div>
   <div id="intro" class="clearfix">
     <div class="item">
-      <div class="container1">
-        <div class="row">
+      <div class="container1 my-5">
+        <div class="row py-4">
           <div class="carousel-caption">
-            <div data-animate="fadeInDown" class="logo">
-              <!-- <img class="logo-big" src="img/logo-big.png" alt="logo" width="130"> -->
-            </div>
-            <h1 data-animate="fadeInDown">Hello!</h1>
-            <h2 data-animate="slideInUp">Junior Full Stack JavaScript Developer.</h2>
-            <!-- <img src="img/do-somthing-great.jpg" alt="Do Something Great" class="header-img"> -->
           </div>
+          <h1 data-animate="slideInUp">Welcome!</h1>
         </div>
       </div>
     </div>
   </div>
+  </div>
 
-  <section id="self" class="self">
-    <h2>Self</h2>
+  <section id="Self to Structured" class="Self to Structured">
+    <h2>Self to Structured</h2>
     <!-- Just a side note...I am recently started taking a the Full Imersive course with Covalence.
       It is a full stack course covering JavaSctirpt, TypeScript, & React.
-      The program is called Catalyst 3.1.23 -->
+      The program is called Catalyst 3.15.23 -->
 
     <p>
       As a self-taught software engineer, I have learned a lot through trial and error,
@@ -88,8 +108,8 @@
     <a href="img/20220403_211053.jpg" target="_blank"></a>
   </section>
 
-  <section id="work" class="work">
-    <h2>Work</h2>
+  <section id="Put in the Work" class="Put in the Work">
+    <h2>Put in the Work</h2>
 
     <p>
       Practice, practice, practice. The best way to learn and improve your skills is to actually use them.
@@ -114,8 +134,8 @@
 
   </section>
 
-  <section id="goals" class="goals">
-    <h2>Goals</h2>
+  <section id="The Goal Is To..." class="The Goal Is To...">
+    <h2>The Goal Is To...</h2>
 
     <p>
       Stay up-to-date with the latest technologies and best practices.
@@ -135,8 +155,8 @@
 
   </section>
 
-  <section id="about" class="about">
-    <h2>About</h2>
+  <section id="A little About Me" class="A little About Me">
+    <h2>A little About Me</h2>
 
     <p>I am a self-taught software engineer who is passionate about using my skills to create a better life
       for myself and my family.
@@ -159,7 +179,7 @@
 
   </section>
 
-  <section id="contact" class="contact">
+  <section id="Personal Business & Contact" class="Personal Business & Contact">
     <h2 class="title">Contact me</h2>
     <h2 class="title">205-569-7293</h2>
     <h2 class="title">JamesEarlSanders2@outlook.com</h2>
@@ -170,9 +190,9 @@
     <p>Of course I have to plug my personal clothing brand.</p>
     <a href="wwww.BeMentallyAttractive.com" class="BMAlink">www.BeMentallyAttractive.com</a>
     <div class="bmaImgContainer">
-    <img src="img/bmacirclelogo.jpg" alt="BeMentallyAttactive" class="BMAimg" align="right">
-    <img src="img/logo.jpg" alt="BeMentallyAttactive" class="BMAimg" align="center">
-    <img src="img/bmacirclelogo2.jpg" alt="BeMentallyAttactive" class="BMAimg" align="left">
+      <img src="img/bmacirclelogo.jpg" alt="BeMentallyAttactive" class="BMAimg" align="right">
+      <img src="img/logo.jpg" alt="BeMentallyAttactive" class="BMAimg" align="center">
+      <img src="img/bmacirclelogo2.jpg" alt="BeMentallyAttactive" class="BMAimg" align="left">
     </div>
     <!-- Social Links Container -->
     <div class="rowsocial" align="center">
@@ -186,6 +206,10 @@
   </section>
 
   <script src="js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
 
 </body>
 
