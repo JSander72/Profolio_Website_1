@@ -6,8 +6,14 @@ body {
   font-size: large;
 }
 
+section {
+  padding-top: 4em;
+  scroll-margin-top: 4em;
+}
+
 /* added background image to bring more life to the page 3.19.23 */
 .clearfix {
+  margin-top: 20px;
   position: relative;
   z-index: -10;
   background-image: url(https://i.ibb.co/ncX7smH/simple-home-setup.jpg);
