@@ -25,7 +25,7 @@ section {
   filter: brightness(75%);
 }
 
-.work, .about {
+.container-fluid, .about {
   background-image: url(https://i.ibb.co/ncX7smH/simple-home-setup.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -67,19 +67,6 @@ section {
 
 }
 
-.BMAlink {
-  position: relative;
-  display: flex;
-  justify-content: space-evenly;
-  font-size: x-large;
-
-}
-.BMAlink:hover {
-  animation: shake-animation 4.72s ease infinite;
-  transform-origin: 50% 50%;
-  font-size: xx-large;
-  font-weight: bolder;
-}
 
 .BMAimg {
   margin-left: auto;
