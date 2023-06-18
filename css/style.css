@@ -1,17 +1,30 @@
+/* Define the color scheme for screens with a minimum width of 576px */
 @media (min-width: 576px) {
+  body {
+
+    .clearfix,
+    .container-fluid,
+    .about {
+      color: rgb(2, 21, 2);
+    }
+
+  }
+
 }
-@media (min-width: 768px) {
-}
-@media (min-width: 992px) {
-}
-@media (min-width: 1200px) {
-}
-@media (min-width: 1400px) {
-}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
+
 
 
 body {
   font-size: large;
+  background-image: linear-gradient(to bottom, #e2e7e1, #515851);
 }
 
 section {
@@ -35,7 +48,8 @@ section {
   filter: brightness(75%);
 }
 
-.container-fluid, .about {
+.container-fluid,
+.about {
   background-image: url(https://i.ibb.co/ncX7smH/simple-home-setup.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
