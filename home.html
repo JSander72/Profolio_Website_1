@@ -7,14 +7,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="googlebot" content="index,follow,snippet,archive">
   <meta name="keywords" content="">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/links.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
     integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
     crossorigin="anonymous"></script>
+  <script src="event_listener.js"></script>
 
   <title>Full Stack | Junior Software Developer</title>
 
@@ -25,206 +29,94 @@
   has a lot of drive to learn please hire me.
   Contact Info: jamesearlsanders2@outlook.com (205)569-7293 -->
 
-<body class="container">
+<body class="">
   <!-- Find best way to set that the navbar with hamberger menu shows on smaller mobile screens 4.18.23 -->
   <header>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col">
-          <div class="p-3 mb-2 bg-transparent text-body">
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- include sliver of image aded to background -->
   </header>
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <!-- Navbar -->
-
-        <!-- figure out how to set the menu so that the words in the self section dont move back and forth as the menu is selected 3.2.23 completed 3.21.23-->
-
-        <nav class="navbar bg-body-tertiary fixed-top">
-          <div class="container">
-            <a class="navbar-brand flex-wrap" href="#">Future Fullstack Python Developer</a>
-            <button class="navbar-toggler shadow" type="button" data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-              aria-labelledby="offcanvasNavbarLabel">
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#self_to_structured">Self to Structured</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#put_in_the_work">Put in the Work</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#the_goal_is_to...">The Goal Is To...</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#a_little_about_me">A little More About Me</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#educational_progress">Educational Progress</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#personal_business_and_contact">Personal Business & Contact</a>
-                  </li>
-
-              </div>
-            </div>
+  <div class="nav_bar">
+    <nav class="navbar fixed-top"> 
+      <div class="container">
+        <a class="navbar-brand" href="#">Future Fullstack Python Developer</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" id="offcanvasNavbar">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-        </nav>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col">
-              <div class="p-3 mb-2 bg-transparent text-body">
-              </div>
-            </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav"> 
+              <li class="nav-item">
+                <a class="nav-link" href="#self_to_structured">Self to Structured</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#put_in_the_work">Put in the Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#the_goal_is_to...">The Goal Is To...</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#a_little_about_me">A little More About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#educational_progress">Educational Progress</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#personal_business_and_contact">Personal Business & Contact</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-    </div>
+    </nav>
+  </div>
 
-    <div class="container-fluid">
-      <div id="intro" class="clearfix">
-        <div class="item">
-          <div class="container1 my-1">
-            <div class="row">
-              <div class="carousel-caption">
-              </div>
-            </div>
-          </div>
-        </div>
+    <div class="container_grid">
+      <div class="header"></div>
+      <div class="self">
+        <h3>Self to Structured</h3>
       </div>
-    </div>
-
-    <div class="row">
-      <!-- <div class="col">
-          <div class="spot"></div>
-        </div> -->
-      <section id="self_to_structured" class="self_to_structured">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2>Self to Structured</h2>
-              <!-- Just a side note...I am recently started taking a the Full stack with Coding Temple.
+      <div class="self_p">
+        <!-- Just a side note...I am recently started taking a the Full stack with Coding Temple.
                    07.2024 -->
 
               <p>
                 I am a married father of three kids, two girls, and one boy. I was born in Atlanta, Georgia, but raised
-                in
-                Birmingham, Alabama. I currently reside in Conyers, Ga. Gowing up I’ve always had a strong desire to
-                learn
-                more about the IT field. With this interest I found myself being the family’s tech support. Eventually
+                in Birmingham, Alabama. I currently reside in Conyers, Ga. Gowing up I’ve always had a strong desire to
+                learn more about the IT field. With this interest I found myself being the family’s tech support. Eventually
                 working for T-Mobile call center for six years as a Tech Representative then Tech Coach (supervisor).
                 Recently my interest built into a burning desire to learn to coding, I have spent the last several
                 months teaching myself coding from the ground up.
               </p>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col -md">
-              <div class="p-3 mb-2 bg-transparent text-body">
-              </div>
-            </div>
-          </div>
-      </section>
-
-      <section id="put_in_the_work" class="put_in_the_work">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-
-              <h2>Put in the Work</h2>
-
-              <p>
+      </div>
+      <div class="put"><h3>Put in the Work</h3></div> 
+      <div class="put_p"><p>
                 With fifteen years of experience in customer service and sales, I have honed my communication and
                 interpersonal skills, making me an effective communicator and collaborator in any team environment.
                 Additionally, has ten years of experience in management roles in fast-paced, team-structured
                 environments,
                 where I have developed exceptional leadership and organizational skills.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-md">
-              <div class="p-3 mb-2 bg-transparent text-body">
-              </div>
-            </div>
-          </div>
-
-      </section>
-
-      <section id="the_goal_is_to..." class="the_goal_is_to...">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2>The Goal Is To...</h2>
-
-              <p>
+              </p></div>
+      <div class="goal"><h3>The Goal Is To...</h3></div>
+      <div class="goal_p"><p>
                 Currently I am enrolled in the Cioding Temple Full Stack Python Developer Program, where I am
                 working to expand my knowledge and skills. I’m a quick learner, highly motivated, and
                 dedicated to my success, making me an excellent candidate for any team looking for a passionate, professional, and driven individual.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="container">
-          <div class="row">
-            <div class="col -md">
-              <div class="p-3 mb-2 bg-transparent text-body">
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </section>
-
-      <section id="a_little_about_me" class="a_little_about_me">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-
-              <h2>A little More About Me</h2>
-              <p>
+              </p></div>
+      <div class="little"><h3>A little More About Me</h3></div>
+      <div class="little_p"><p>
                 I was raised in Birmingham, Alabama and attended Miles College in Fairfield, Alabama with a major in Criminal
-                Justice.<b></b>
-             
+                Justice.          
                 I also became a member of Kappa Alpha Psi fraternity Spring 2005. Throughout my life, I have faced
                 challenges and overcome them through determination and hard work. That same grit will lead to my future success as a Software Engineer. I am excited to continue growing and education in the field.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md">
-            <div class="p-3 mb-2 bg-transparent text-body">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <section id="educational_progress" class="educational_progress">
+              </p></div>
+      <di class="footer"><section id="educational_progress" class="educational_progress">
       <div class="container">
         <div class="row">
           <div class="col-12 py-3">
-            <h2>Level of educational attainment up to the present.</h2>
+            <h3>Level of educational attainment up to the present.</h3>
             <div class="row">
               <div class="col">
                 <div class="skill-item">
@@ -295,15 +187,20 @@
                 </div>
               </div>
             </div>
-    </section>
-    <div class="container-fluid">
+    </section>           
+             
+    </div>
+
+         
+    
+    <!-- <div class="container-fluid">
       <div class="row">
         <div class="col">
           <div class="p-3 mb-2 bg-transparent text-body">
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <section class="">
       <!-- need to figuere out how to resize linked img below so it has a mobile friendly size and still works 4.3.23 completed 4.4.23  -->
@@ -313,12 +210,12 @@
             img="/home/jsander72/jamesearlsanders/img/LinkedIN.png"></a>
         </div>
       </div>
-      <div class="container">
+      <div class="contact_me">
         <div class="row">
           <div class="col text-center">
-            <h2 class="title">Contact me</h2>
-            <h2 class="title">205-569-7293</h2>
-            <h2 class="title">JamesEarlSanders2@outlook.com</h2>
+            <h3 class="title">Contact me</h3>
+            <h3 class="title">205-569-7293</h3>
+            <h3 class="title">JamesEarlSanders2@outlook.com</h3>
             <p>I look forward to working with you in the near future.</p>
             <!-- linked my git hub pages static website to this one. I will be changing assignments as I complete them along my coding educational journey 3.26.23-->
             <h6 class="text-center ">Take a look and come back to see the growth over the next few months</h6>
@@ -346,7 +243,7 @@
       <div class="container shadow">
         <div class="row">
           <div class="col">
-            <h2>Be Mentally Atractive LLC.</h2>
+            <h3>Be Mentally Atractive LLC.</h3>
             <p>Of course I have to plug my personal clothing brand.</p>
             <p><a href="www.BeMentallyAttractive.com"
                 class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">www.BeMentallyAttractive.com</a>
@@ -373,19 +270,17 @@
 
 
   </section>
-  <div class="container-fluid">
+  <!-- <div class="container-fluid">
     <div class="row">
       <div class="col">
         <div class="p-3 mb-2 bg-transparent text-body">
         </div>
       </div>
-    </div>
+    </div> -->
 
 
     <!-- <script src="js/index.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"></script>
+   
 
 
 </body>

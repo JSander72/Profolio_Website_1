@@ -20,46 +20,104 @@
 
 @media (min-width: 1400px) {}
 
-
-
 body {
-  font-size: large;
-  background-image: linear-gradient(to bottom, #e2e7e1, #515851);
+  padding-top: 60px;
+  margin: auto;
+  
 }
 
-section {
-  padding-top: 1em;
-  padding-bottom: 1em;
-  scroll-margin-top: 1em;
-  scroll-margin-bottom: 1em;
+/* deleted 9/4/24 restructure page */
+.container_grid {
+  border: 2px solid black;
+  margin: 0 auto;
+  display: grid;
+  gap: 20px;
+  width: 50%;
+  grid-template-columns: 150px, 1fr;
+  grid-template-rows: 75px, 1fr, 1fr, 1fr, 1fr, 300px;
+  grid-template-areas: "header header" /* header c1/3 r1/2*/
+                        "sidebar main" /* self c1/2 self_p r2/3 */
+                        "sidebar main" /* put c1/2 put_p 3/4*/
+                        "sidebar main" /* goal c1/2 goal_p r4/5*/
+                        "sidebar main" /* little c1/2 little_p r5/6 */
+                        "footer footer"; /* footer level of ed div*/
+
+}
+.header {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  /* border: 2px solid black; */
+}
+  
+.self {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.self_p {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.put {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.put_p {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+.goal {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+.goal_p {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+.little {
+  grid-column: 1/2;
+  grid-row: 5/6;
+}
+.little_p {
+  grid-column: 2/3;
+  grid-row: 5/6;
 }
 
-/* added background image to bring more life to the page 3.19.23 */
-.clearfix {
-  margin-top: 20px;
-  position: relative;
-  z-index: -10;
-  background-image: url("/home/jamessanders/Portfolio-website/Portfolio-Website/img/dev_desk_dark.jpg"); 
-  /*get image above to show as background  */
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  text-shadow: 1px 1px 2px rgb(248, 247, 247), 0 0 1em rgb(247, 247, 248), 0 0 0.2em rgb(247, 247, 248);
-  filter: brightness(75%);
+.footer {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 6;
+  grid-row-end: 7;
+  /* border: 2px solid black; */
 }
 
-.container-fluid,
-.about {
-  background-image: url("/home/jamessanders/Portfolio-website/Portfolio-Website/img/dev_desk_dark.jpg");
-   /*get image above to show as background  */
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  text-shadow: 1px 1px 2px rgb(248, 247, 247), 0 0 1em rgb(247, 247, 248), 0 0 0.2em rgb(247, 247, 248);
-  filter: brightness(75%);
-}
+/*get image above to show as background  */
+body {
+    background-image: url("img/dev_desk_dark.jpg"); /* Path to your image */
+    background-size: cover;        /* Cover the entire viewport */
+    background-repeat: no-repeat;  /* Prevent image repetition */
+    background-attachment: fixed;   /* Keep the background fixed */
+  }
+
+ 
+  .nav_bar {
+    background-color: rgba(0, 0, 0, 0.2); /* Initial background with some transparency */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+  }
+  
+  .nav_bar.scrolling {
+    background-color: rgba(0, 0, 0, 0) !important ; /* Transparent background when scrolling */
+  }
+
+ .navbar-brand {
+    opacity: 1; /* Initially visible */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+  }
+  
+  .nav_bar.scrolling .navbar-brand {
+    opacity: 0 !important ; /* Hide when scrolling */
+  }
 
 .logo-big {
   align-content: center;
@@ -67,13 +125,6 @@ section {
   position: relative;
 }
 
-.self,
-.goals,
-.contact {
-  background-color: rgba(93, 93, 84, 0.094);
-  margin-top: auto;
-
-}
 
 .bmaImgContainer {
   display: flex;
