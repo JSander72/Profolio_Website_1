@@ -1,38 +1,20 @@
-/* Define the color scheme for screens with a minimum width of 576px */
-@media (min-width: 576px) {
-  body {
-
-    .clearfix,
-    .container-fluid,
-    .about {
-      color: rgb(2, 21, 2);
-    }
-
-  }
-
-}
-
-@media (min-width: 768px) {}
-
-@media (min-width: 992px) {}
-
-@media (min-width: 1200px) {}
-
-@media (min-width: 1400px) {}
-
 body {
   padding-top: 60px;
   margin: auto;
-  
+  background-size: cover;           
+  background-repeat: no-repeat;   
+  background-attachment: fixed;   
+  color: rgb(2, 21, 2); /* Apply color directly to body */
 }
 
-/* deleted 9/4/24 restructure page */
+/* restructure page 9/4/24 */
 .container_grid {
   border: 2px solid black;
   margin: 0 auto;
   display: grid;
   gap: 20px;
   width: 50%;
+  min-height: 100vh;
   grid-template-columns: 150px, 1fr;
   grid-template-rows: 75px, 1fr, 1fr, 1fr, 1fr, 300px;
   grid-template-areas: "header header" /* header c1/3 r1/2*/
@@ -42,7 +24,9 @@ body {
                         "sidebar main" /* little c1/2 little_p r5/6 */
                         "footer footer"; /* footer level of ed div*/
 
+  
 }
+
 .header {
   grid-column-start: 1;
   grid-column-end: 4;
@@ -92,32 +76,31 @@ body {
   /* border: 2px solid black; */
 }
 
-/*get image above to show as background  */
-body {
-    background-image: url("img/dev_desk_dark.jpg"); /* Path to your image */
-    background-size: cover;        /* Cover the entire viewport */
-    background-repeat: no-repeat;  /* Prevent image repetition */
-    background-attachment: fixed;   /* Keep the background fixed */
-  }
+.contact_container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: auto;
+  margin-left: auto;
+  /* border: 2px solid black; just to see the edges  */
+}
 
- 
-  .nav_bar {
-    background-color: rgba(0, 0, 0, 0.2); /* Initial background with some transparency */
-    transition: background-color 0.3s ease; /* Smooth transition for background color */
-  }
-  
-  .nav_bar.scrolling {
-    background-color: rgba(0, 0, 0, 0) !important ; /* Transparent background when scrolling */
-  }
+.nav_bar {
+  background-color: rgba(0, 0, 0, 0.2); 
+  transition: background-color 0.3s ease; 
+}
 
- .navbar-brand {
-    opacity: 1; /* Initially visible */
-    transition: opacity 0.3s ease; /* Smooth transition for opacity */
-  }
-  
-  .nav_bar.scrolling .navbar-brand {
-    opacity: 0 !important ; /* Hide when scrolling */
-  }
+.nav_bar.scrolling {
+  background-color: rgba(0, 0, 0, 0) !important; 
+}
+
+.navbar-brand {
+  opacity: 1; 
+  transition: opacity 0.3s ease; 
+}
+
+.nav_bar.scrolling .navbar-brand {
+  opacity: 0 !important; 
+}
 
 .logo-big {
   align-content: center;
