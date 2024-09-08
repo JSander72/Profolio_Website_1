@@ -7,7 +7,7 @@ body {
   color: rgb(2, 21, 2); /* Apply color directly to body */
 }
 
-/* restructure page 9/4/24 */
+/* restructure page 9/4/24 utilizing grid  */
 .container_grid {
   border: 2px solid black;
   margin: 0 auto;
@@ -75,6 +75,7 @@ body {
   grid-row-end: 7;
   /* border: 2px solid black; */
 }
+/* end og grid container  */
 
 .contact_container {
   display: flex;
@@ -83,7 +84,7 @@ body {
   margin-left: auto;
   /* border: 2px solid black; just to see the edges  */
 }
-
+/* navbar fade feature supported in js file */
 .nav_bar {
   background-color: rgba(0, 0, 0, 0.2); 
   transition: background-color 0.3s ease; 
@@ -102,6 +103,7 @@ body {
   opacity: 0 !important; 
 }
 
+/* image controls */
 .logo-big {
   align-content: center;
   display: inline-block;
@@ -161,6 +163,7 @@ body {
   background-color: black;
 }
 
+/* social media shake feature  */
 .fa-youtube:hover {
   animation: shake-animation 4.72s ease infinite;
   transform-origin: 50% 50%;
