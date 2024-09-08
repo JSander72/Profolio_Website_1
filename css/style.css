@@ -10,6 +10,7 @@ body {
 /* restructure page 9/4/24 utilizing grid  */
 .container_grid {
   border: 2px solid black;
+  border-style: hidden;
   margin: 0 auto;
   display: grid;
   gap: 20px;
@@ -38,34 +39,42 @@ body {
 .self {
   grid-column: 1/2;
   grid-row: 2/3;
+  padding: 15px;
 }
 .self_p {
   grid-column: 2/3;
   grid-row: 2/3;
+  padding: 15px;
 }
 .put {
   grid-column: 1/2;
   grid-row: 3/4;
+  padding: 15px;
 }
 .put_p {
   grid-column: 2/3;
   grid-row: 3/4;
+  padding: 15px;
 }
 .goal {
   grid-column: 1/2;
   grid-row: 4/5;
+  padding: 15px;
 }
 .goal_p {
   grid-column: 2/3;
   grid-row: 4/5;
+  padding: 15px;
 }
 .little {
   grid-column: 1/2;
   grid-row: 5/6;
+  padding: 15px;
 }
 .little_p {
   grid-column: 2/3;
   grid-row: 5/6;
+  padding: 15px;
 }
 
 .footer {
@@ -73,9 +82,68 @@ body {
   grid-column-end: 4;
   grid-row-start: 6;
   grid-row-end: 7;
-  /* border: 2px solid black; */
+  padding: 15px;
+
 }
-/* end og grid container  */
+
+
+/* progress bars */
+.progress-bar {
+  padding: 5px;
+  height : 20px;
+}
+
+.progress-bar > span {
+  height            : 100%;
+  display           : block;
+  overflow          : hidden;
+  position          : relative;
+  background-color  : #0080C5;
+  transition        : 500ms linear;
+  -webkit-transition: 500ms linear;
+}
+
+.progress-bar > span:after {
+  content          : "";
+  top              : 0;
+  left             : 0;
+  right            : 0;
+  bottom           : 0;
+  z-index          : 1;
+  position         : absolute;
+  background-size  : 50px 50px;
+  overflow         : hidden;
+  animation        : stripes-move 1s linear infinite;
+  -webkit-animation: stripes-move 1s linear infinite;
+  background-image : -webkit-linear-gradient(135deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+  background-image : linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+}
+
+@-webkit-keyframes stripes-move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 50px;
+  }
+}
+
+@keyframes stripes-move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 50px;
+  }
+}
+
+.progress-bar > span:after {
+  -webkit-animation: stripes-move 2s linear infinite;
+  animation        : stripes-move 2s linear infinite;
+}
+/* end of progress bars animation*/
+
+/* end of grid container  */
 
 .contact_container {
   display: flex;

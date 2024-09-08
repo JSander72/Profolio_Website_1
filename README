@@ -1,4 +1,34 @@
-/* Just a side note...I am currently taking a course with Coding Temple (Bootcamp).
-      It is a full stack course covering Python, Python OOP, Related Databases, API REST Devenlopment, Javascript, and React. */
-/* added background image to bring more life to the page 9.3.24 */
+# Project Title: Full Stack | Junior Software Developer Portfolio
 
+Description
+This HTML file represents a personal portfolio website for a Junior Software Developer. It showcases the developer's skills, experience, and educational background. The site features a grid layout with sections for self-introduction, skills, goals, and contact information.
+
+## Features
+
+Navigation Bar: A fixed navigation bar with a brand name.
+Grid Layout: The content is organized using a grid layout for better readability.
+Sections: Includes sections for:
+Self-introduction
+Work experience
+Goals
+Educational progress with skill bars
+Personal business (Be Mentally Attractive LLC)
+
+## Contact form
+
+External Links: Links to the developer's GitHub profile, LinkedIn profile (commented out), and personal clothing brand website.
+Contact Information: Provides contact information and a contact form.
+Dependencies
+Bootstrap: Utilizes Bootstrap for styling and layout.
+Font Awesome: Uses Font Awesome for icons.
+jQuery: Includes jQuery for potential JavaScript interactions.
+
+## How to Use
+
+Clone the Repository: If this project is hosted on a platform like GitHub, clone the repository to your local machine.
+
+Open index.html: Open the index.html file in your web browser.
+
+Explore the Portfolio: Navigate through the different sections to learn more about the developer.
+
+Get in Touch: Use the contact form or provided contact information to reach out to the developer.
