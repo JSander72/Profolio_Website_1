@@ -30,7 +30,7 @@ a{
   justify-content: end;
   align-items: center;
   padding-top: 1rem;
-  border-bottom: 2px solid rgb(223, 251, 219);
+  /* border-bottom: 2px solid rgb(223, 251, 219); */
 }
 
 
@@ -42,6 +42,7 @@ a{
 
 .hamburger-menu .line{
   justify-content: end;
+  align-items: end;
   display: block;
   width:2.5rem;
   height: 2px;
@@ -53,44 +54,48 @@ a{
 .nav-menu{
   position: fixed;
   justify-content: flex-end; 
-  width: 94%;  
+  width: 14%;  
   top: 6rem;
   right: 3%; 
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
   font-weight: 600;
   
 }
 
 
 .nav-menu a{
-  display: block;
+  display: flex;
   text-align: center;
   padding: 5px 0;
   color: black;
 }
 .nav-menu a:hover{
+  display: flex;
   background-color: rgb(223, 251, 219);
+  padding: 5px 10px; 
+  border-radius: 5px; 
 }
+
 
 .hide{
   display: none;
 }
 
 /* for Desktop view  */
-@media screen and (min-width:600px){
+@media screen and (min-width:768px){
   .navbar{
       justify-content: end;
   }
   .nav-menu{
       display: block;
-      position: static;
+      /* position: static; */
       width: auto;
       margin-right:20px;
       background: none;
   }
   .nav-menu a{
       display: flex;
-      align-content: inline;
+      align-content: end;
       justify-content: end;
       padding: 15px 20px;
   }
@@ -225,7 +230,7 @@ a{
 }
 
 .nav_bar.scrolling {
-  background-color: rgba(0, 0, 0, 0) !important; 
+  background-color: rgba(0, 0, 0, 0); 
 }
 
 .navbar-brand {
@@ -234,7 +239,7 @@ a{
 }
 
 .nav_bar.scrolling .navbar-brand {
-  opacity: 0 !important; 
+  opacity: 0; 
 }
 
 /* image controls */
