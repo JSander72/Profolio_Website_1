@@ -4,8 +4,106 @@ body {
   background-size: cover;           
   background-repeat: no-repeat;   
   background-attachment: fixed;   
-  color: rgb(2, 21, 2); /* Apply color directly to body */
+  font-family: sams-serif;
+  color: rgb(2, 21, 2);
 }
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all 0.4s;
+}
+
+a{
+  text-decoration: none;
+  /* justify-content: end; */
+  color: black;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/* navbar styling */
+.navbar{
+  display: flex;
+  height: 5rem;
+  justify-content: end;
+  align-items: center;
+  padding-top: 1rem;
+  border-bottom: 2px solid rgb(223, 251, 219);
+}
+
+
+.hamburger-menu{
+  /* justify-content: end; */
+  /* padding-right: 1.5rem; */
+  cursor: pointer;
+}
+
+.hamburger-menu .line{
+  justify-content: end;
+  display: block;
+  width:2.5rem;
+  height: 2px;
+  margin-bottom: 10px;
+  background-color: black;
+  cursor: pointer;
+}
+
+.nav-menu{
+  position: fixed;
+  justify-content: flex-end; 
+  width: 94%;  
+  top: 6rem;
+  right: 3%; 
+  background-color: rgb(255, 255, 255);
+  font-weight: 600;
+  
+}
+
+
+.nav-menu a{
+  display: block;
+  text-align: center;
+  padding: 5px 0;
+  color: black;
+}
+.nav-menu a:hover{
+  background-color: rgb(223, 251, 219);
+}
+
+.hide{
+  display: none;
+}
+
+/* for Desktop view  */
+@media screen and (min-width:600px){
+  .navbar{
+      justify-content: end;
+  }
+  .nav-menu{
+      display: block;
+      position: static;
+      width: auto;
+      margin-right:20px;
+      background: none;
+  }
+  .nav-menu a{
+      display: flex;
+      align-content: inline;
+      justify-content: end;
+      padding: 15px 20px;
+  }
+  .nav-menu a:hover{
+      background-color: rgb(223, 251, 219);
+      border-radius: 5px;
+  }
+  .hamburger-menu{
+      display: none;
+      
+  }
+}
+
 
 /* restructure page 9/4/24 utilizing grid  */
 .container_grid {
@@ -93,55 +191,20 @@ body {
   height : 20px;
 }
 
-.progress-bar > span {
-  height            : 100%;
-  display           : block;
-  overflow          : hidden;
-  position          : relative;
-  background-color  : #0080C5;
-  transition        : 500ms linear;
-  -webkit-transition: 500ms linear;
+@media (max-width: 768px) {
+  .container {
+      grid-template-columns: 1fr; 
+      grid-template-rows: repeat(4, 1fr);
+      /* found "repeat" https://developer.mozilla.org/en-US/docs/Web/CSS/repeat */
+      grid-template-areas: 
+                "header header" 
+                "sidebar"
+                "main"
+                "sidebar" main" 
+                "sidebar main"
+                "sidebar main" 
+                "footer footer";
 }
-
-.progress-bar > span:after {
-  content          : "";
-  top              : 0;
-  left             : 0;
-  right            : 0;
-  bottom           : 0;
-  z-index          : 1;
-  position         : absolute;
-  background-size  : 50px 50px;
-  overflow         : hidden;
-  animation        : stripes-move 1s linear infinite;
-  -webkit-animation: stripes-move 1s linear infinite;
-  background-image : -webkit-linear-gradient(135deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
-  background-image : linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
-}
-
-@-webkit-keyframes stripes-move {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 50px 50px;
-  }
-}
-
-@keyframes stripes-move {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 50px 50px;
-  }
-}
-
-.progress-bar > span:after {
-  -webkit-animation: stripes-move 2s linear infinite;
-  animation        : stripes-move 2s linear infinite;
-}
-/* end of progress bars animation*/
 
 /* end of grid container  */
 
