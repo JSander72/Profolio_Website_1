@@ -200,12 +200,15 @@ a{
                 "header header" 
                 "sidebar"
                 "main"
-                "sidebar" main" 
-                "sidebar main"
-                "sidebar main" 
+                "sidebar"
+                "main" 
+                "sidebar"
+                "main"
+                "sidebar"
+                "main" 
                 "footer footer";
 }
-
+}
 /* end of grid container  */
 
 .contact_container {
