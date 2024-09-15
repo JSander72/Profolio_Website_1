@@ -242,6 +242,7 @@ a{
   opacity: 0; 
 }
 
+
 /* image controls */
 .logo-big {
   align-content: center;
@@ -249,7 +250,12 @@ a{
   position: relative;
 }
 
-
+.profile_img {
+  width: 150px;
+  height: auto;
+  border: solid black;
+  border-radius: 15%;
+}
 .bmaImgContainer {
   display: flex;
   justify-content: space-evenly;
